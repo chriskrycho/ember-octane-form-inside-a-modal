@@ -1,8 +1,8 @@
 {
-  "name": "worked-example",
+  "name": "ember-octane-form-inside-a-modal",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for worked-example goes here",
+  "description": "A worked example of a form inside a modal in Ember Octane",
   "repository": "",
   "license": "MIT",
   "author": "",
@@ -41,6 +41,7 @@
     "ember-maybe-import-regenerator": "^0.1.6",
     "ember-qunit": "^4.6.0",
     "ember-resolver": "^8.0.2",
+    "ember-set-helper": "^2.0.0",
     "ember-source": "~3.22.0",
     "ember-template-lint": "^2.14.0",
     "eslint": "^7.11.0",
@@ -48,12 +49,18 @@
     "eslint-plugin-node": "^11.1.0",
     "loader.js": "^4.7.0",
     "npm-run-all": "^4.1.5",
-    "qunit-dom": "^1.5.0"
+    "qunit-dom": "^1.5.0",
+    "tracked-toolbox": "^1.2.1",
+    "typescript": "^4.1.2"
   },
   "engines": {
     "node": "10.* || >= 12"
   },
   "ember": {
     "edition": "octane"
+  },
+  "volta": {
+    "node": "15.2.1",
+    "npm": "7.0.12"
   }
 }

@@ -1,0 +1,33 @@
+<form {{on "submit" this.submit}}>
+  <label>
+    Name (initially {{@fields.name}}, currently {{this.name}}):<br/>
+    <input
+      id="name"
+      value={{this.name}}
+      {{on "input" (pick "target.value" (fn this.set "name"))}}
+    />
+  </label>
+  <label>
+    Age (initially {{@fields.age}}, currently {{this.age}}):<br/>
+    <input
+      id="age"
+      type="number"
+      min="13"
+      value={{this.age}}
+      {{on "input" (pick "target.valueAsNumber" (fn this.set "age"))}}
+    />
+  </label>
+  <label>
+    Email (initially {{@fields.email}}, currently {{this.email}}):<br/>
+    <input
+      id="email"
+      value={{this.email}}
+      {{on "input" (pick "target.value" (fn this.set "email"))}}
+    />
+  </label>
+  <menu class='form-contents-menu'>
+    <button class='submit' type="submit">
+      Submit it!
+    </button>
+  </menu>
+</form>

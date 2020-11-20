@@ -1,0 +1,15 @@
+{{#if @isOpen}}
+  <div role="dialog" class="dialog">
+    <header>
+      <h2>
+        {{@title}}
+      </h2>
+      <button type="button" {{on "click" @onDismiss}}>
+        close ❌
+      </button>
+    </header>
+    <section>
+      {{yield}}
+    </section>
+  </div>
+{{/if}}

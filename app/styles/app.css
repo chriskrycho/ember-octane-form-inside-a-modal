@@ -1,0 +1,47 @@
+.submit {
+  display: block;
+  width: 100%;
+  background: green;
+  color: white;
+  font-weight: bold;
+  border: none;
+  height: 1.5em;
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.form-contents-menu {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+label {
+  display: block;
+  width: 100%;
+  margin: 1em;
+}
+
+.dialog {
+  width: 90%;
+  max-width: 40em;
+  margin: auto;
+  box-shadow: 0 0 40px black;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+header h2 {
+  flex: 1 0 auto;
+}
+
+header button {
+  flex: 0 0 auto;
+  background: none;
+  border: none;
+}

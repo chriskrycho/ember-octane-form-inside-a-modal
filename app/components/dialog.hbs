@@ -1,0 +1,11 @@
+<dialog open>
+  {{yield}}
+  <menu>
+    <button type="button" {{on "click" @onCancel}}>
+      Cancel
+    </button>
+    <button type="button" {{on "click" @onConfirm}}>
+      DO IT
+    </button>
+  </menu>
+</dialog>

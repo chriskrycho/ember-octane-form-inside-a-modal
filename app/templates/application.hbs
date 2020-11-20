@@ -1,3 +1,7 @@
-<h2 id="title">Welcome to Ember</h2>
-
-{{outlet}}
+<FormOwner as |form|>
+  <FormContents
+    @onSubmit={{form.close}}
+    @onChange={{form.didChange}}
+    @fields={{hash name="Chris" age=33 email="hello@chriskrycho.com"}}
+  />
+</FormOwner>

@@ -1,0 +1,22 @@
+<button type="button" {{on "click" (set this "showModal" true)}}>
+  Show modal
+</button>
+
+<Modal
+  @title="fun cool things"
+  @isOpen={{this.showModal}}
+  @onDismiss={{this.close}}
+>
+  <p>
+    <code>requiresConfirmationCheck</code>:
+    {{this.requiresConfirmationCheck}}
+  </p>
+
+  {{yield (hash close=this.close didChange=this.didChange)}}
+</Modal>
+
+{{#if this.dialog}}
+  <Dialog @onConfirm={{this.dialog.resolve}} @onCancel={{this.dialog.reject}}>
+    Are you sure?
+  </Dialog>
+{{/if}}
